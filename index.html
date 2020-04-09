@@ -277,7 +277,7 @@ $(function(){
 		var money_num = parseInt($input_num.val()) || 20000;
 		var date = parseInt($(this).attr('date'));
 		$input_num.val(money_num).attr('readonly',true);
-		var result = (money_num/date).toFixed(2);
+		var result = (money_num*1.0527/date).toFixed(2);
 		$('.result span').html(result);
 	}).on('click','._top',function(){
 		$('html,body').animate({'scrollTop':0},300)
