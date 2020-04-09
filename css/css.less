@@ -72,14 +72,14 @@ input{
 }
 .banner{
 	height: 600px;
-	background:url(../images/bg.png)no-repeat center;
+	background:url(../images/bg.jpg)no-repeat center;
 	.form{
 		position: absolute;
 		right: 0;
-		top: 50px;
+		top: 35px;
 		width: 400px;
 		background-color: #f2f2f2;
-		padding-bottom: 35px;
+		padding-bottom: 25px;
 		.form_tit{
 			height: 52px;
 			line-height: 52px;
@@ -93,7 +93,7 @@ input{
 		}
 		.form_section{
 			padding:0 40px;
-			margin-top: 20px;
+			margin-top: 12px;
 			.box{
 				position: relative;
 				input{
@@ -103,7 +103,7 @@ input{
 					background-color: #fff;
 					text-indent: 10px;
 					box-sizing:content-box;
-					margin-top: 8px;
+					margin-top: 5px;
 				}
 				ul{
 					position: absolute;
@@ -119,14 +119,15 @@ input{
 						padding-left: 10px;
 						cursor: pointer;
 						&:hover{
-							background-color:#999;
+							background-color:#f20;
+							color:#fff;
 						}
 					}
 				}
 				i{
 					position: absolute;
 					left: 245px;
-					top: 18px;
+					top: 14px;
 					font-size: 14px;
 					color:#333;
 				}
@@ -136,6 +137,22 @@ input{
 			input{
 				background:#fff url(../images/icon_str.png)no-repeat 280px center;
 				background-size: 14px;
+			}
+		}
+		.ph_code{
+			.send_code{
+				position: absolute;
+				right: -1px;
+				height: 35px;
+				background-color: #f35543;
+				width: 120px;
+				border-radius:3px;
+				border:none;
+				bottom:1px;
+				outline:none;
+				color:#fff;
+				font-size: 14px;
+				cursor: pointer;
 			}
 		}
 		.submit{
@@ -344,9 +361,6 @@ input{
 .info{
 	background-color: #f6f8f7;
 	padding-bottom: 40px;
-	.tit{
-		
-	}
 	ul{
 		width: 900px;
 		margin:0 auto;
@@ -396,9 +410,11 @@ footer{
 	background-color: #494e54;
 	padding-top: 40px;
 	padding-bottom: 140px;
-	.label{
-		font-size: 20px;
-		color:#ccc;
+	.min{
+		.tit{
+			padding-top: 0;
+			color:#fff;
+		}
 	}
 	p{
 		font-size: 14px;
@@ -439,7 +455,7 @@ footer{
 	}
 	.form{
 		position: relative;
-		width: 580px;
+		width: 750px;
 		display:flex;
 		flex-wrap:wrap;
 		.label{
@@ -483,7 +499,8 @@ footer{
 						padding-left: 10px;
 						cursor: pointer;
 						&:hover{
-							background-color:#999;
+							background-color:#fd8b2a;
+							color:#fff;
 						}
 					}
 				}
@@ -506,13 +523,30 @@ footer{
 				}
 			}
 		}
+		.form_section.ph_code{
+			.box{
+				input{
+					width: 220px;
+				}
+			}
+			.send_code{
+				position: absolute;
+				right: 0;
+				height: 37px;
+				background-color: #fd8b2a;
+				width: 110px;
+				border-radius:3px;
+				border:none;
+				bottom:0;
+				outline:none;
+				color:#fff;
+				font-size: 14px;
+				cursor: pointer;
+			}
+		}
 		.submit{
-			position: absolute;
-			width: 70px;
-			height: 70px;
-			border-radius:50%;
-			right: 0;
-			top:18px;
+			width: 144px;
+			height: 37px;
 			background-color: #fd8b2a;
 			outline:none;
 			border:none;
@@ -520,6 +554,8 @@ footer{
 			cursor: pointer;
 			font-weight: bold;
 			font-size: 16px;
+			text-align: center;
+			margin-top: 11px;
 		}
 	}
 }

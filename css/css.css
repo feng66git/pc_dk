@@ -72,15 +72,15 @@ input {
 }
 .banner {
   height: 600px;
-  background: url(../images/bg.png) no-repeat center;
+  background: url(../images/bg.jpg) no-repeat center;
 }
 .banner .form {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 35px;
   width: 400px;
   background-color: #f2f2f2;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 .banner .form .form_tit {
   height: 52px;
@@ -95,7 +95,7 @@ input {
 }
 .banner .form .form_section {
   padding: 0 40px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .banner .form .form_section .box {
   position: relative;
@@ -107,7 +107,7 @@ input {
   background-color: #fff;
   text-indent: 10px;
   box-sizing: content-box;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 .banner .form .form_section .box ul {
   position: absolute;
@@ -125,12 +125,13 @@ input {
   cursor: pointer;
 }
 .banner .form .form_section .box ul li:hover {
-  background-color: #999;
+  background-color: #f20;
+  color: #fff;
 }
 .banner .form .form_section .box i {
   position: absolute;
   left: 245px;
-  top: 18px;
+  top: 14px;
   font-size: 14px;
   color: #333;
 }
@@ -138,6 +139,20 @@ input {
 .banner .form .status input {
   background: #ffffff url(../images/icon_str.png) no-repeat 280px center;
   background-size: 14px;
+}
+.banner .form .ph_code .send_code {
+  position: absolute;
+  right: -1px;
+  height: 35px;
+  background-color: #f35543;
+  width: 120px;
+  border-radius: 3px;
+  border: none;
+  bottom: 1px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
 }
 .banner .form .submit {
   display: block;
@@ -393,9 +408,9 @@ footer {
   padding-top: 40px;
   padding-bottom: 140px;
 }
-footer .label {
-  font-size: 20px;
-  color: #ccc;
+footer .min .tit {
+  padding-top: 0;
+  color: #fff;
 }
 footer p {
   font-size: 14px;
@@ -436,7 +451,7 @@ footer .min .bank {
 }
 .land .form {
   position: relative;
-  width: 580px;
+  width: 750px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -484,7 +499,8 @@ footer .min .bank {
   cursor: pointer;
 }
 .land .form .form_section .box ul li:hover {
-  background-color: #999;
+  background-color: #fd8b2a;
+  color: #fff;
 }
 .land .form .form_section .box i {
   position: absolute;
@@ -499,13 +515,26 @@ footer .min .bank {
 .land .form .form_section.status ul {
   top: -110px;
 }
-.land .form .submit {
+.land .form .form_section.ph_code .box input {
+  width: 220px;
+}
+.land .form .form_section.ph_code .send_code {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
   right: 0;
-  top: 18px;
+  height: 37px;
+  background-color: #fd8b2a;
+  width: 110px;
+  border-radius: 3px;
+  border: none;
+  bottom: 0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.land .form .submit {
+  width: 144px;
+  height: 37px;
   background-color: #fd8b2a;
   outline: none;
   border: none;
@@ -513,6 +542,8 @@ footer .min .bank {
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
+  margin-top: 11px;
 }
 #_remin {
   position: fixed;

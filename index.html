@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>银行贷款</title>
+	<title>正规贷款服务平台-众贷网</title>
 	<link rel="stylesheet" href="css/css.css">
+	<link rel="icon" href="images/favicon.ico" type="images/x-ico" />
 </head>
 <body>
-	<header></header>
 	<div class="banner">
 		<div class="min">
 			<div class="form">
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="username form_section">
-					<span class="label">您的称呼:</span>
+					<span class="label">您的姓名:</span>
 					<div class="box">
 						<input type="text" placeholder="请输入您的姓名">
 					</div>
@@ -51,6 +51,13 @@
 					<span class="label">手机号码:</span>
 					<div class="box">
 						<input type="text" placeholder="请输入您的手机号码" maxlength="11">
+					</div>
+				</div>
+				<div class="ph_code form_section">
+					<span class="label">验证码:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入验证码">
+						<button class="send_code">获取验证码</button>
 					</div>
 				</div>
 				<button class="submit">立即申请</button>
@@ -186,15 +193,17 @@
 	</div>
 	<footer>
 		<div class="min">
-			<p class="label">合作机构</p>
+			<div class="tit">合作机构</div>
 			<div class="bank"></div>
-			<p>版权所有上海钱智金融信息服务有限公司© 2012-2017 沪ICP备案14033791号-1</p>
+			<p>国鑫通融（北京）金融服务外包有限公司 备案/许可证编号：京ICP备19043625</p>
 			<p>借贷有风险，选择需谨慎</p>
 		</div>
 	</footer>
 	<div class="land">
 		<div class="min">
-			<div class="logo">company</div>
+			<div class="logo">
+				<img src="images/f_logo.png" alt="">
+			</div>
 			<div class="form">
 				<div class="status form_section">
 					<span class="label">身份:</span>
@@ -238,87 +247,18 @@
 						<input type="text" placeholder="请输入您的手机号码" maxlength="11">
 					</div>
 				</div>
-				<button class="submit">立即<br>申请</button>
+				<div class="ph_code form_section">
+					<span class="label">验证码:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入验证码">
+						<button class="send_code">获取验证码</button>
+					</div>
+				</div>
+				<button class="submit">立即申请</button>
 			</div>
 		</div>
 	</div>
 </body>
 <script src="js/jquery.min.js"></script>
-<script>
-$(function(){
-	$('body').on('mouseenter','.form .box',function(){
-		$(this).find('ul').show();
-	}).on('mouseleave','.form .box',function(){
-		$(this).find('ul').hide();
-	}).on('click','.form ul li',function(){
-		var me = $(this);
-		var val = me.html();
-		console.log(me.attr('type'))
-		if(me.attr('type') == 'other'){
-			me.parent().hide().prev().attr('readonly',false).val('').focus();
-		}else{
-			me.parent().hide().prev().val(val).attr('readonly',true);
-		}
-	}).on('click','.count ul li',function(){
-		$(this).addClass('on').siblings().removeClass('on');
-		var parent_name = $(this).parent().parent()[0].className;
-		var val_num = $(this).attr('value');
-		if(parent_name == 'money'){
-			if(val_num>0){
-				$('.money input').attr('readonly',true).val(val_num)
-			}else{
-				$('.money input').attr('readonly',false).val('').focus()
-			}
-		}else{
-			$('.computer').attr('date',val_num)
-		}
-	}).on('click','.computer',function(){
-		var $input_num = $('.money input');
-		var money_num = parseInt($input_num.val()) || 20000;
-		var date = parseInt($(this).attr('date'));
-		$input_num.val(money_num).attr('readonly',true);
-		var result = (money_num*1.0527/date).toFixed(2);
-		$('.result span').html(result);
-	}).on('click','._top',function(){
-		$('html,body').animate({'scrollTop':0},300)
-	}).on('click','.submit',function(){
-		var trphone = /^1[3,4,5,6,7,8,9]\d{9}$/;
-		var $me = $(this).parent();
-		var status = $me.find('.status input').val();
-		var price = $me.find('.price input').val();
-		var username = $me.find('.username input').val();
-		var phone = $me.find('.phone input').val();
-		
-		if(price == ''){
-			remin('请输入金额');
-			return;
-		}else if(username == ''){
-			remin('请输入您的姓名');
-			return;
-		}else if(!trphone.test(phone)){
-			remin('请输入正确的手机号码');
-			return;
-		}else{
-			alert(status+'-'+price+'-'+username+'-'+phone)
-		}
-	})
-	$(window).scroll(function(){
-		var srcoll_top = $(this).scrollTop();
-		if(srcoll_top>580){
-			$('.land').fadeIn()
-		}else{
-			$('.land').fadeOut()
-		}
-	})
-	function remin(e){
-		var remin_txt = '<div id="_remin" style="display:none">'+e+'</div>';
-		$('body').append(remin_txt).stop();
-		$('#_remin').fadeIn();
-		setTimeout(function(){
-			$('#_remin').fadeOut().remove();
-		},3000)
-	}
-})
-</script>
-	
+<script src="js/index.js"></script>
 </html>
