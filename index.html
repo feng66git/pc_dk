@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>银行贷款</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<header></header>
+	<div class="banner">
+		<div class="min">
+			<div class="form">
+				<div class="form_tit">立即申请贷款</div>
+				<div class="status form_section">
+					<span class="label">您的身份:</span>
+					<div class="box">
+						<input type="text" readonly="true" value="上班族">
+						<ul>
+							<li>上班族</li>
+							<li>企业主</li>
+							<li>个体户</li>
+							<li>其他</li>
+						</ul>
+					</div>
+				</div>
+				<div class="price form_section">
+					<span class="label">贷款金额:</span>
+					<div class="box">
+						<input type="text" oninput = "value=value.replace(/[^\d]/g,'')" readonly="true" value="10">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>10</li>
+							<li>20</li>
+							<li>30</li>
+							<li>50</li>
+							<li>100</li>
+							<li type="other">其他</li>
+						</ul>
+						<i>万元</i>
+					</div>
+				</div>
+				<div class="username form_section">
+					<span class="label">您的称呼:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入您的姓名">
+					</div>
+				</div>
+				<div class="phone form_section">
+					<span class="label">手机号码:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入您的手机号码" maxlength="11">
+					</div>
+				</div>
+				<button class="submit">立即申请</button>
+			</div>
+		</div>
+	</div>
+	<div class="easy">
+		<div class="min">
+			<div class="tit">贷款 比您想象的更简单</div>
+			<ul>
+				<li>
+					<div><img src="images/icon_s.png" alt=""></div>
+					<p><span>10秒</span>申请</p>
+				</li>
+				<li>
+					<div><img src="images/icon_t.png" alt=""></div>
+					<p><span>10分钟</span>联系</p>
+				</li>
+				<li>
+					<div><img src="images/icon_m.png" alt=""></div>
+					<p>最快<span>10分钟</span>放款</p>
+				</li>
+			</ul>
+			<i class="i1"></i>
+			<i class="i2"></i>
+		</div>
+	</div>
+	<div class="scheme">
+		<div class="min">
+			<div class="tit">您的难处都有方案</div>
+			<ul>
+				<li>
+					<div>
+						<img src="images/icon_a.png" alt="">
+						<span>买车</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="images/icon_b.png" alt="">
+						<span>买房</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="images/icon_c.png" alt="">
+						<span>装修</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="images/icon_d.png" alt="">
+						<span>经营</span>
+					</div>
+				</li>
+			</ul>
+			<button class="_top">立即借款</button>
+		</div>
+	</div>
+	<div class="count">
+		<div class="min">
+			<div class="tit">还款算一算</div>
+			<div class="content">
+				<div class="result">每月还款：<span>123.56</span></div>
+				<div class="money">
+					<span class="label">金额</span>
+					<ul>
+						<li value="20000" class="on">2万</li>
+						<li value="30000">3万</li>
+						<li value="50000">5万</li>
+						<li value="80000">8万</li>
+						<li value="0">其他</li>
+					</ul>
+					<input type="text" class="num" readonly="true" value="20000">
+				</div>
+				<div class="date">
+					<span class="label">期限</span>
+					<ul>
+						<li value="12" class="on">12个月</li>
+						<li value="18">18个月</li>
+						<li value="24">24个月</li>
+						<li value="36">36个月</li>
+						<li value="48">48个月</li>
+					</ul>
+				</div>
+				<div class="computer" date="12">算一算</div>
+			</div>
+			<button class="_top">立即借款</button>
+		</div>
+	</div>
+	<div class="info">
+		<div class="min">
+			<div class="tit">让融资更简单</div>
+			<ul>
+				<li>
+					<div class="img">
+						<img src="images/icon1.png" alt="">
+					</div>
+					<div class="txt">
+						<p class="year"><span class="num">8</span>年</p>
+						<p>成立至今</p>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="images/icon2.png" alt="">
+					</div>
+					<div class="txt">
+						<p class="year"><span class="num">57851</span>位</p>
+						<p>客户成功放款</p>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="images/icon3.png" alt="">
+					</div>
+					<div class="txt">
+						<p class="year"><span class="num">337</span>亿</p>
+						<p>累计放款额</p>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="images/icon4.png" alt="">
+					</div>
+					<div class="txt">
+						<p class="year"><span class="num">21083</span>个</p>
+						<p>合作产品</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div class="min">
+			<p class="label">合作机构</p>
+			<div class="bank"></div>
+			<p>版权所有上海钱智金融信息服务有限公司© 2012-2017 沪ICP备案14033791号-1</p>
+			<p>借贷有风险，选择需谨慎</p>
+		</div>
+	</footer>
+	<div class="land">
+		<div class="min">
+			<div class="logo">company</div>
+			<div class="form">
+				<div class="status form_section">
+					<span class="label">身份:</span>
+					<div class="box">
+						<input type="text" readonly="true" value="上班族">
+						<ul>
+							<li>上班族</li>
+							<li>企业主</li>
+							<li>个体户</li>
+							<li>其他</li>
+						</ul>
+					</div>
+				</div>
+				<div class="price form_section">
+					<span class="label">金额:</span>
+					<div class="box">
+						<input oninput = "value=value.replace(/[^\d]/g,'')" type="text" readonly="true" value="10">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>10</li>
+							<li>20</li>
+							<li>30</li>
+							<li>50</li>
+							<li>100</li>
+							<li type="other">其他</li>
+						</ul>
+						<i>万元</i>
+					</div>
+				</div>
+				<div class="username form_section">
+					<span class="label">姓名:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入您的姓名">
+					</div>
+				</div>
+				<div class="phone form_section">
+					<span class="label">手机:</span>
+					<div class="box">
+						<input type="text" placeholder="请输入您的手机号码" maxlength="11">
+					</div>
+				</div>
+				<button class="submit">立即<br>申请</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$('body').on('mouseenter','.form .box',function(){
+		$(this).find('ul').show();
+	}).on('mouseleave','.form .box',function(){
+		$(this).find('ul').hide();
+	}).on('click','.form ul li',function(){
+		var me = $(this);
+		var val = me.html();
+		console.log(me.attr('type'))
+		if(me.attr('type') == 'other'){
+			me.parent().hide().prev().attr('readonly',false).val('').focus();
+		}else{
+			me.parent().hide().prev().val(val).attr('readonly',true);
+		}
+	}).on('click','.count ul li',function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		var parent_name = $(this).parent().parent()[0].className;
+		var val_num = $(this).attr('value');
+		if(parent_name == 'money'){
+			if(val_num>0){
+				$('.money input').attr('readonly',true).val(val_num)
+			}else{
+				$('.money input').attr('readonly',false).val('').focus()
+			}
+		}else{
+			$('.computer').attr('date',val_num)
+		}
+	}).on('click','.computer',function(){
+		var $input_num = $('.money input');
+		var money_num = parseInt($input_num.val()) || 20000;
+		var date = parseInt($(this).attr('date'));
+		$input_num.val(money_num).attr('readonly',true);
+		var result = (money_num/date).toFixed(2);
+		$('.result span').html(result);
+	}).on('click','._top',function(){
+		$('html,body').animate({'scrollTop':0},300)
+	}).on('click','.submit',function(){
+		var trphone = /^1[3,4,5,6,7,8,9]\d{9}$/;
+		var $me = $(this).parent();
+		var status = $me.find('.status input').val();
+		var price = $me.find('.price input').val();
+		var username = $me.find('.username input').val();
+		var phone = $me.find('.phone input').val();
+		
+		if(price == ''){
+			remin('请输入金额');
+			return;
+		}else if(username == ''){
+			remin('请输入您的姓名');
+			return;
+		}else if(!trphone.test(phone)){
+			remin('请输入正确的手机号码');
+			return;
+		}else{
+			alert(status+'-'+price+'-'+username+'-'+phone)
+		}
+	})
+	$(window).scroll(function(){
+		var srcoll_top = $(this).scrollTop();
+		if(srcoll_top>580){
+			$('.land').fadeIn()
+		}else{
+			$('.land').fadeOut()
+		}
+	})
+	function remin(e){
+		var remin_txt = '<div id="_remin" style="display:none">'+e+'</div>';
+		$('body').append(remin_txt).stop();
+		$('#_remin').fadeIn();
+		setTimeout(function(){
+			$('#_remin').fadeOut().remove();
+		},3000)
+	}
+})
+</script>
+	
+</html>
