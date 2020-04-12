@@ -89,34 +89,80 @@ header .nav a.on{
 .about_text .min .tit,.contact_text .min .tit{
   padding-top: 10px;
 }
-.about_text p{
+.about_text .txt p{
   font-size: 16px;
   color:#333;
-  margin-top: 25px;
+  margin-top: 20px;
   line-height: 2;
 }
 .about_text ul{
   display:flex;
   justify-content:space-between;
-  margin-top: 50px;
 }
 .about_text ul li{
   display:flex;
+}
+.about_text .ti_name{
+  font-size: 22px;
+  margin-top: 40px;
+}
+.about_text .chanpin ul{
+  flex-wrap:wrap;
+}
+.about_text .chanpin ul li{
+  width: 550px;
+  height: 90px;
+  border:1px solid #fa7e2c;
+  align-items:center;
+  border-radius:8px;
+  margin-top: 30px;
+}
+.about_text .chanpin ul li section:nth-child(1){
+  margin-left: 10px;
+  width: 90px;
+}
+.about_text .chanpin ul li section:nth-child(2){
+  margin-top: 5px;
+  margin-left: 8px;
 
 }
-.about_text ul li div{
+.about_text .chanpin ul li p{
+  font-size: 14px;
+  line-height: 1.5;
+}
+.about_text .chanpin ul li img{
+  width: 44px;
+  height: 44px;
+  display:block;
+  margin:0 auto;
+}
+.about_text .chanpin ul li p.name{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2px;
+  color:#fa7e2c;
+} 
+.about_text .xinnian{
+  margin-top: 50px;
+}
+.about_text .xinnian ul {
+  margin-top: 25px;
+}
+.about_text .xinnian ul li div{
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
-.about_text ul li div span{
+.about_text .xinnian ul li div span{
   font-size: 14px;
   color:#333;
   margin-left: 10px;
 }
-.about_text ul li div .name{
+.about_text .xinnian ul li div .name{
   font-weight: bold;
   margin-bottom: 5px;
+  color:#fa7e2c;
 }
 .contact_text p{
   font-size: 20px;
