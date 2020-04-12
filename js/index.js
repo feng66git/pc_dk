@@ -86,7 +86,7 @@ $(function(){
 	})
 	$(window).scroll(function(){
 		var srcoll_top = $(this).scrollTop();
-		if(srcoll_top>580){
+		if(srcoll_top>200){
 			$('.land').fadeIn()
 		}else{
 			$('.land').fadeOut()

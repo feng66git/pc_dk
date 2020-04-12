@@ -34,6 +34,9 @@ img {
   border: 0;
   vertical-align: bottom;
 }
+a{
+  text-decoration: none;
+}
 b,
 i,
 em {
@@ -48,6 +51,80 @@ input {
   margin: 0 auto;
   position: relative;
 }
+
+header{
+  background-color: #fff;
+}
+header .min{
+  height: 90px;
+  display:flex;
+  width: 1272px;
+  align-items:center;
+  justify-content:space-between;
+}
+header h1{
+  width: 152px;
+  height: 70px;
+  background:url(../images/logo.png)no-repeat;
+}
+header .nav{
+  margin-right: 40px;
+}
+header .nav a{
+  color:#555;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+header .nav a:hover{
+  border-bottom: 2px solid #666;
+}
+header .nav a.on{
+  color:#f35543;
+}
+.about_text,.contact_text{
+  padding-bottom: 50px;
+}
+.about_text .min .tit,.contact_text .min .tit{
+  padding-top: 10px;
+}
+.about_text p{
+  font-size: 16px;
+  color:#333;
+  margin-top: 25px;
+  line-height: 2;
+}
+.about_text ul{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 50px;
+}
+.about_text ul li{
+  display:flex;
+
+}
+.about_text ul li div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.about_text ul li div span{
+  font-size: 14px;
+  color:#333;
+  margin-left: 10px;
+}
+.about_text ul li div .name{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contact_text p{
+  font-size: 20px;
+  line-height: 2;
+  margin-top: 15px;
+}
+
+
 .min .tit {
   font-size: 36px;
   color: #333;
@@ -406,7 +483,7 @@ input {
 footer {
   background-color: #494e54;
   padding-top: 40px;
-  padding-bottom: 140px;
+  padding-bottom: 180px;
 }
 footer .min .tit {
   padding-top: 0;
@@ -417,6 +494,7 @@ footer p {
   color: #eee;
   text-align: center;
   line-height: 1.5;
+  margin-top: 5px;
 }
 footer .min {
   width: 1280px;
